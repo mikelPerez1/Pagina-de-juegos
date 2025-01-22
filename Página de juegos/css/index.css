@@ -1,0 +1,125 @@
+@import url(bootstrap-5.3.3-dist/css/bootstrap.min.css);
+
+/* variables */
+:root {}
+
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* global styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+ul {
+    list-style: none;
+
+}
+
+/* 
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    & div {
+        display: block;
+        align-items: center;
+        padding: 0 20px;
+        width: 100%;
+
+        & img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            position: absolute;
+            left: 20px;
+            cursor: pointer;
+        }
+    }
+
+}
+ */
+/* class styles */
+
+.menu-categorias {
+    display: flex;
+
+}
+
+.categoria {
+    min-width: 100px;
+    min-height: 200px;
+}
+
+.list-group-horizontal {
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+
+}
+
+.list-group-horizontal .card {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    width: 200px;
+    /* Ajusta el ancho según tus necesidades */
+    height: 150px;
+}
+
+.contenedor-juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(202px + 1rem), 1fr));
+    gap: 20px;
+    padding: 20px;
+
+    & div {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+
+    & p {
+        width: 100%;
+    }
+}
+
+.juego {
+    max-width: min-content;
+
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.horizontal-scroll .item {
+    display: inline-block;
+    min-width: 200px;
+    min-height: 100px;
+    /* Ajusta el ancho según tus necesidades */
+    margin-right: 10px;
+    /* Separación entre elementos */
+    background-color: #f8f9fa;
+    /* Fondo claro para visibilidad */
+    border: 1px solid #dee2e6;
+    /* Borde para visibilidad */
+    padding: 20px;
+    /* Ajuste de padding */
+}
